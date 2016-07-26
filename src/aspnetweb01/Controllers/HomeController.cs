@@ -16,6 +16,7 @@ namespace aspnetweb01.Controllers
         public IActionResult About()
         {
             ViewData["Message"] = "Your application description page.";
+            ViewData["Machine"] = Environment.MachineName.ToString();
 
             return View();
         }
